@@ -6,8 +6,6 @@ labels: testing
 
 ---
 
-Note: for User role test exclude after Account/User feature, for DomainAdmin role exclude after Infrastrucutre (except for Offerings)
-
 | Feature | Tester | Result | Related Issues |
 |---------------|--------|--------|----------------|
 | **Common** | | | |
@@ -34,9 +32,16 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Create new instance | || |
 | | | | |
 | **Compute > Kubernetes** | | | |
+| Basic search | | | |
+| Extended search | | | |
 | Sort | | | |
 | Links | | | |
-|Sub menus | | | |
+| Filter by | | | |
+| Add Kubernetes cluster | | | |
+| Start/stop a Kubernetes cluster | | | |
+| Scale Kubernetes cluster | | | |
+| Upgrade Kubernetes cluster | | | |
+| Delete Kubernetes cluster | | | |
 | | | | |
 | **Compute > Instances > selected instance** | | | |
 | View console | | | |
@@ -144,8 +149,6 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Delete VM snapshot | | | |
 | | | | |
 | **Storage > VM Snapshots** | | | |
-| | | | |
-| **Storage > Backups** | | | |
 | | | | |
 | **Network > Guest networks** | | | |
 | Basic search | | | |
@@ -350,30 +353,13 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | View event timeline | | | |
 | Delete event | | | |
 | | | | |
-| **Users** | | | |
+| **Identify and access > Users** | | | |
 | Links | | | |
 | Search | | | |
 | Sort | | | |
 | Add user | | | |
 | | | | |
-| **Accounts** | | | |
-| Links | | | |
-| Search | | | |
-| Sort | | | |
-| Add account | | | |
-| Add LDAP account | | | |
-| | | | |
-| **Accounts > selected account** | | | |
-| Links | | | |
-| Update account | | | |
-| Update resource count | | | |
-| Disable/enable account | | | |
-| Lock/unlock account | | | |
-| Add certificate | | | |
-| Delete account | | | |
-| Settings | | | |
-| | | | |
-| **Users > selected user** | | | |
+| **Identify and access > Users > selected user** | | | |
 | Links | | | |
 | Edit user | | | |
 | Change password | | | |
@@ -383,7 +369,24 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Copy API Key | | | |
 | Copy Secret Key | | | |
 | | | | |
-| **Domains** | | | |
+| **Identify and access > Accounts** | | | |
+| Links | | | |
+| Search | | | |
+| Sort | | | |
+| Add account | | | |
+| Add LDAP account | | | |
+| | | | |
+| **Identify and access > Accounts > selected account** | | | |
+| Links | | | |
+| Update account | | | |
+| Update resource count | | | |
+| Disable/enable account | | | |
+| Lock/unlock account | | | |
+| Add certificate | | | |
+| Delete account | | | |
+| Settings | | | |
+| | | | |
+| **Identify and access > Domains** | | | |
 | Search | | | |
 | Expand/collapse | | | |
 | Add/delete note | | | |
@@ -394,19 +397,21 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Link domain to LDAP Group/OU | | | |
 | Settings | | | |
 | | | | |
-| **Roles** | | | |
+| **Identify and access > Roles** | | | |
 | Links | | | |
 | Search | | | |
 | Sort | | | |
 | Create role | | | |
 | | | | |
-| **Roles > selected role** | | | |
+| **Identify and access > Roles > selected role** | | | |
 | Edit role | | | |
 | Delete role | | | |
 | Rules - add new rule | | | |
 | Rules - modify rule | | | |
 | Rules - delete rule | | | |
 | Rules - change rules order | | | |
+| | | | |
+| **Regions** | | | |
 | | | | |
 | **Infrastructure > Summary** | | | |
 | Links | | | |
@@ -600,7 +605,13 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Update offering access | | | |
 | Delete offering | | | |
 | | | | |
-| **Offerings > Backup offerings** | | | |
+| **Backup offering** | | | |
+| Import offering | | | |
+| Configure backup provider (Veeam) | | | |
+| Create backup offering | | | |
+| Assign VM to backup offering | | | |
+| Revert to backup | | | |
+| Delete backup | | | |
 | | | | |
 | **Offerings > Network offerings** | | | |
 | Links | | | |
@@ -643,12 +654,29 @@ Note: for User role test exclude after Account/User feature, for DomainAdmin rol
 | Configure LDAP | | | |
 | | | | |
 | **Configuration > LDAP Configuration > selected LDAP configuration** | | | |
-| TBD | | |
+| Links | | | |
+| Delete | | |
 | | | | |
 | **Configuration > Baremetal Rack Configuration** | | | |
 | | | | |
 | **Configuration > Hypervisor capabilities** | | | |
 | Data | | | |
+| Search | | | |
+| Sort | | | |
+| | | | |
+| **Quota > Summary** | | | |
+| Search | | | |
+| Sort | | | |
+| | | | |
+| **Quota > Summary > selected account** | | | |
+| Add credits | | | |
+| | | | |
+| **Quota > Tariff** | | | |
+| Sort | | | |
+| Calendar | | | |
+| Change value | | | |
+| | | | |
+| **Quota > Email template** | | | |
 | Search | | | |
 | Sort | | | |
 | | | | |
